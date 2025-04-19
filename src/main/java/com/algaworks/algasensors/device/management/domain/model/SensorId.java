@@ -2,6 +2,7 @@ package com.algaworks.algasensors.device.management.domain.model;
 
 import io.hypersistence.tsid.TSID;
 import jakarta.persistence.Embeddable;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import java.util.Objects;
 
 @Getter
 @Embeddable
+@EqualsAndHashCode
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 public class SensorId implements Serializable {
     private TSID value;
